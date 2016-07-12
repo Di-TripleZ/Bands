@@ -1,36 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es" ng-app="artists">
 <head>
-    <meta charset="UTF-8">
-    <title>Band Searcher</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/jquery-2.2.4.min.js"></script>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/mystyle.css">
+
+	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/jquery_functions.js"></script>
+	<title>Movies</title>
 </head>
+<body ng-controller="HomeViewController">
 
-<body>
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-            <img src="img/Icon.png" alt="">
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+<yisu-header> </yisu-header>
+	<nav>
+	<div class="blue nav-wrapper">
+			<ul id="nav-mobile" class="categoryMenu hide-on-med-and-down">
+				<li><a href="#filter/1960">60's</a></li>
+				<li><a href="#filter/1970">70's</a></li>
+				<li><a href="#filter/1980">80's</a></li>
+				<li><a href="#filter/1990">90's</a></li>
+			</ul>
+		</div>
+	</nav>
 
-    
-    <footer class="footer">
-        <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
-        </div>
-    </footer>
-    <script src="js/angular.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+</div>
+
+<div id ="cont" ng-view>
+
+</div>
+
+
+
+<yisu-footer></yisu-footer>
+
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/angular-messages.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 </body>
-
 </html>

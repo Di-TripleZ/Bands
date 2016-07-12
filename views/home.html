@@ -1,0 +1,74 @@
+<div class="container-fluid" >
+	<div class="row">
+		<div class="col s12">
+
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="slider">
+			<ul class="slides">
+				<li>
+					<img src="img/beatles.jpg"> <!-- random image -->
+					<div class="caption center-align">
+
+					</div>
+				</li>
+				<li>
+					<img src="img/black-sabbath.jpg"> <!-- random image -->
+					<div class="caption left-align">
+
+					</div>
+				</li>
+				<li>
+					<img src="img/iron-maiden.png"> <!-- random image -->
+					<div class="caption right-align">
+
+					</div>
+				</li>
+				<li>
+					<img src="img/nirvana.jpg"> <!-- random image -->
+					<div class="caption center-align">
+
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+
+<div class=" nav-wrapper" >
+	<form>
+		<div class="col s6 input-field">
+			<input id="search" type="search" ng-model="nameFilter" placeholder="buscar"required>
+			 
+		</div>
+	</form>
+</div>
+
+</div>
+
+
+
+<section ng-controller="artists">
+	<div class="container">
+		<article class="movie-box" ng-repeat="artist in artists | filter: {name: nameFilter}" class="movie">
+			<a href="#/data/artist/{{artist.name}}">
+				<div class="movie-box">
+					<img ng-src="{{artist.image}}" alt="{{artist.image}} "/>
+					<p>{{artist.name}}</p>
+				</div>
+			</a>	
+		</article>
+	</div>
+</section>
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<section id ="movie" ng-controller="artists">
+	
+		<article class="container row" ng-repeat="artist in artists | filter:{name: name}:true" class="movie">
+			<div class="col s6"> 
+				<img ng-src="{{artist.image}}" alt="{{artist.image}} "/>
+			</div>
+			<div class="col s4">
+				<h4>{{artist.name}}</h4>
+
+				<p>{{artist.songs}}</p>
+			</div>
+			
+		</article>
+	</section>
