@@ -1,7 +1,7 @@
 
 
 /* para footer fijo */
-.movie-box p{
+.artist.box p{
   text-align: center;
   color: white;
 
@@ -46,7 +46,7 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
 .styleFooter{
   background-color: black !important;
 }
-.movie-box{
+.artist.box{
   width: 200px;
   display: inline-block;
   vertical-align: top;
