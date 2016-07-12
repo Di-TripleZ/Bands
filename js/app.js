@@ -11,7 +11,7 @@ app.config(['$routeProvider',function($routeProvider) {
 		controller: "CategoryViewController"
 	})
 	.when ("/data/artist/:name",{
-		templateUrl: "views/movie.html",
+		templateUrl: "views/artist.html",
 		controller: "ArtistViewController"
 	})
 	.when("/contact",{

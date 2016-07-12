@@ -1,9 +1,9 @@
 
 <section ng-controller="artists">
 	<div class="container">
-		<article class="movie-box" ng-repeat="artist in artists | filter: {decade: decade}" class="movie">
+		<article class="artist-box" ng-repeat="artist in artists | filter: {decade: decade}" class="movie">
 			<a href="#/data/artist/{{artist.name}}">
-				<div class="movie-box">
+				<div class="artist-box">
 					<img ng-src="{{artist.image}}" alt="{{artist.image}} "/>
 					<p>{{artist.name}}</p>
 				</div>
